@@ -4,7 +4,7 @@ import { getCategories } from '../services';
 
 const Categories = () => {
   const [categories, setCategories] = useState([]);
-  console.log('hello', categories);
+  // console.log('hello', categories);
   useEffect(() => {
     getCategories().then((newCategories) => setCategories(newCategories));
   }, []);
