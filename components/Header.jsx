@@ -8,6 +8,7 @@ const Header = () => {
   useEffect(() => {
     getCategories().then((newCategories) => {
       setCategories(newCategories);
+      console.log(1, newCategories);
     });
   }, []);
   return (
