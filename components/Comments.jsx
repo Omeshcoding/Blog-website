@@ -7,14 +7,14 @@ const Comments = ({ slug }) => {
 
   useEffect(() => {
     getComments(slug).then((result) => setComments(result));
-  }, []);
+  }, [slug]);
 
   return (
     <>
       {comments.length > 0 && (
         <div
           className="bg-white text-black shadow-lg
-        p-8 pb-12 rounded-lg 
+        p-8 pb-12 mr-6 rounded-lg 
         "
         >
           <h3 className="text-xl mb-8 font-semibold border-b pb-4">
