@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import moment from 'moment';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getRecentPosts, getSimilarPosts } from '../services';
 
 const PostWidget = ({ categories, slug }) => {
@@ -22,15 +23,20 @@ const PostWidget = ({ categories, slug }) => {
       </h3>
       {relatedPosts.map((post) => (
         <div key={post.title} className="flex items-center w-full">
-          <div className="w-16 flex-none">
-            <img
+          <Link
+            href={`/post/${post.slug}`}
+            key={post.title}
+            className="w-16 flex-none"
+          >
+            <Image
               src={post.featuredImage.url}
+              unoptimized
               alt={post.title}
-              height="60px"
-              width="60px"
-              className="align-middle rounded-full my-2"
+              height="60"
+              width="60"
+              className="align-middle rounded my-2"
             />
-          </div>
+          </Link>
 
           <div className="flex-grow ml-4">
             <Link href={`/post/${post.slug}`} key={post.title}>

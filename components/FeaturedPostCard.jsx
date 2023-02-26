@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const FeaturedPostCard = ({ post }) => {
   return (
-    <div className=" relative h-72">
+    <div className=" relative h-72 hover:scale-x-[1.01] transition-all duration-500 sc">
       <div
         style={{ backgroundImage: `url('${post.featuredImage.url}')` }}
         className="absolute rounded-lg bg-center bg-cover inline-block bg-no-repeat w-full h-72"
