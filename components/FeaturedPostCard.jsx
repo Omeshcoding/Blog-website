@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const FeaturedPostCard = ({ post }) => {
   return (
-    <div className=" relative h-72 hover:scale-x-[1.01] transition-all duration-500 sc">
+    <div className=" relative h-72 hover:scale-[1.01] transition-all duration-500 ">
       <div
         style={{ backgroundImage: `url('${post.featuredImage.url}')` }}
         className="absolute rounded-lg bg-center bg-cover inline-block bg-no-repeat w-full h-72"
@@ -18,7 +18,7 @@ const FeaturedPostCard = ({ post }) => {
         <p className="text-white mb-4 text-shadow font-semibold text-2xl text-center">
           {post.title}
         </p>
-        <div className="flex items-center justify-center w-full bottom-5 absolute">
+        <div className="flex items-center justify-center w-full bottom-5 absolute hover:scale-[1.04] transition-all duration-500">
           <Image
             unoptimized
             src={post.author.photo.url}
@@ -27,7 +27,7 @@ const FeaturedPostCard = ({ post }) => {
             width="30"
             className="align-middle  drop-shadow-lg rounded-full"
           />
-          <p className="inline align-middle text-shadow ml-2 font-medium ">
+          <p className="text-white inline align-middle text-shadow ml-2 font-medium ">
             {post.author.name}
           </p>
         </div>
