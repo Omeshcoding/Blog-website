@@ -70,3 +70,8 @@ a {
     background: #fff;
   }
 }
+.react-multi-carousel-item {
+  transform-style: flat;
+  -webkit-backface-visibility: visible;
+  backface-visibility: hidden;
+}
