@@ -75,6 +75,9 @@ a {
   -webkit-backface-visibility: visible;
   backface-visibility: hidden;
 }
+.re.react-multi-carousel-list .arrow-btn {
+  background: rgba(130, 30, 92, 0);
+}
 .gradient-style {
   @apply bg-gradient-to-r from-purple-500 to-pink-500   shadow-xl;
 }
