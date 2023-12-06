@@ -28,7 +28,7 @@ const PostDetail = ({ post }) => {
 
       case 'paragraph':
         return (
-          <p key={index} className="text-black mb-8">
+          <p key={index} className="text-black text-md  mb-8">
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item} </React.Fragment>
             ))}
@@ -37,7 +37,7 @@ const PostDetail = ({ post }) => {
 
       case 'heading-four':
         return (
-          <h4 key={index} className="text-md font-semibold mb-4 text-black">
+          <h4 key={index} className="text-lg font-semibold mb-4 text-black">
             {modifiedText.map((item, i) => (
               <React.Fragment key={i}>{item} </React.Fragment>
             ))}
@@ -60,7 +60,7 @@ const PostDetail = ({ post }) => {
   };
 
   return (
-    <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 mr-6">
+    <div className="bg-white shadow-lg rounded-lg lg:p-8 pb-12 mb-8 lg:mr-6">
       <div className="relative overflow-hidden shadow-md mb-6">
         <img
           src={post.featuredImage.url}
