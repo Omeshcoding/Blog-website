@@ -31,7 +31,7 @@ const Postcard = ({ post }) => {
         <div className="font-medium text-gray-700">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 inline mr-2 text-pink-500"
+            className="h-6 w-6 inline mr-2 text-[#09f674]"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -51,7 +51,7 @@ const Postcard = ({ post }) => {
       </p>
       <div className="text-center">
         <Link href={`/post/${post.slug}`}>
-          <span className="text-white transition duration-500 transform hover:-translate-y-1 inline-block bg-pink-600 px-8 py-3 text-lg font-medium rounded-full">
+          <span className="text-white transition duration-500 transform hover:-translate-y-1 inline-block gradient-style gradient-hover px-8 py-3 text-lg font-medium rounded-full ">
             Continue Reading
           </span>
         </Link>

@@ -5,10 +5,7 @@ const CreatedBy = () => {
     <footer className="text-white text-center py-10">
       <p>
         Created By{' '}
-        <span className="text-green-400 font-medium text-lg">
-          {' '}
-          Umesh Sharma{' '}
-        </span>
+        <span className="text-style font-medium text-lg"> Umesh Sharma </span>
       </p>
       <p>All Rights Reserved.</p>
     </footer>

@@ -94,7 +94,7 @@ const CommentsForm = ({ slug }) => {
       <div className="mt-8">
         <button
           type="button"
-          className="transition duration-500 ease bg-pink-600 py-2 px-8 rounded-full text-gray-100 font-small text-lg hover:bg-indigo-500 hover: cursor-pointer"
+          className="transition duration-500 ease gradient-style gradient-hover py-2 px-8 rounded-full text-gray-100 font-small text-lg hover:bg-indigo-500 hover: cursor-pointer"
           onClick={handleCommentSubmission}
         >
           {/* {!showSuccessMessage ? 'Post Comment' : 'Posting Comment...'} */}
